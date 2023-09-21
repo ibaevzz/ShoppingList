@@ -1,0 +1,15 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/listsFragment">
+    <fragment
+        android:id="@+id/listsFragment"
+        android:name="com.ibaevzz.shoppinglist.fragments.ListsFragment">
+        <action
+            android:id="@+id/action_listsFragment_to_itemsFragment"
+            app:destination="@id/itemsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemsFragment"
+        android:name="com.ibaevzz.shoppinglist.fragments.ItemsFragment"/>
+</navigation>
